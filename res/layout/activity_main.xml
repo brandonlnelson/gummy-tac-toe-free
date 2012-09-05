@@ -1,0 +1,112 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:id="@+id/outer_layout"
+    >
+
+        <LinearLayout 
+        android:layout_height="50dp"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal">
+    
+	    <Button
+	        android:id="@+id/tactoebanner"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="5"
+	        android:background="@drawable/tactoebanner" />
+                            
+	    <Button
+	        android:id="@+id/gummypopbanner"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="5"
+	        android:background="@drawable/gummypopbanner"
+	         />
+                            
+    </LinearLayout>
+    
+    
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    >
+	    
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    >
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/welcome"
+        android:textSize="24dp"
+        android:typeface="monospace"
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="20dp"
+        />
+
+
+
+    <Button
+        android:id="@+id/start_player"
+        android:text="@string/start_player"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:background="@drawable/blue_button_resized"
+        />
+        <Button
+        android:id="@+id/start_comp"
+        android:text="@string/start_comp"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:background="@drawable/blue_button_resized"
+        />
+        <Button
+            android:id="@+id/more_games"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+        	android:text="@string/more_games"
+        	android:textSize="20dp"
+        	android:textColor="@android:color/white"
+        	android:background="@drawable/blue_button_resized"
+        	android:layout_marginBottom="10dp" />
+        </LinearLayout>
+        
+ 
+                                      <com.tapfortap.AdView
+                android:id="@+id/ad_view"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_alignParentBottom="true"
+                 /> 
+
+<!--                          
+             <LinearLayout
+     android:id="@+id/banner"
+     android:layout_width="fill_parent"
+     android:layout_height="50dp"
+     android:layout_alignParentBottom="true" >
+</LinearLayout>
+-->
+
+    </RelativeLayout>
+
+</LinearLayout>
